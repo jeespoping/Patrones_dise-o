@@ -1,8 +1,23 @@
 package main;
 
-public class Jaguar extends Animal implements IFelino{
+public class Jaguar extends Animal implements IFelinoSalvaje{
     private int edad;
     private float peso;
+
+    public Jaguar() {
+        this.setEdad(0);
+        this.setPeso(0.0f);
+    }
+
+    public Jaguar(int edad) {
+        this.edad = edad;
+        this.setPeso(0.0f);
+    }
+
+    public Jaguar(float peso) {
+        this.peso = peso;
+        this.setEdad(0);
+    }
 
     public Jaguar(int edad, float peso) {
         this.edad = edad;
@@ -47,12 +62,12 @@ public class Jaguar extends Animal implements IFelino{
     }
 
     @Override
-    public void maullar() {
-        throw new UnsupportedOperationException("El jaguar no maulla!"); //To change body of generated methods, choose Tools | Templates.
+    public void cazar() {
+        System.out.println("El jaguar caza!");
     }
 
     @Override
-    public void cazar() {
-        System.out.println("El jaguar caza!");
+    public void maullar() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
