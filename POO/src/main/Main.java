@@ -1,14 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package main;
 
-/**
- *
- * @author Jesus
- */
 public class Main {
-    
+    public static void main(String[] args) {
+        //Instancia = crear un objeto
+        
+        Jaguar yagua = new Jaguar(10, 120f);
+        
+        System.out.println(yagua);
+        
+        yagua.comer();
+        yagua.dormir();
+        
+        yagua.maullar();
+    }
 }
